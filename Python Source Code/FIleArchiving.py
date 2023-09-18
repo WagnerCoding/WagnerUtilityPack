@@ -27,7 +27,7 @@ def main():
             [sg.Text("Compression types: ")],
             [sg.Button("GZIP"), sg.Button("BZIP2"), sg.Button("LMZA"), sg.Button("Exit")],
             [sg.HSeparator()],
-            [sg.Text('Your Hashes: ')],
+            [sg.Text('Output: ')],
             sg.Output(size=(150, 30)),
         ],
     ]
