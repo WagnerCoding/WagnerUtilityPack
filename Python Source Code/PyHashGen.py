@@ -4,6 +4,7 @@ import os
 import PySimpleGUI as sg
 import hashlib
 import sys
+import subprocess
 
 sg.theme("DarkTeal2")
 
@@ -23,7 +24,7 @@ def main():
             [sg.HSeparator()],
             [sg.Text('Enter hash to verify: ', size=(15, 1)), sg.InputText(key="-HASH-")],
             [sg.HSeparator()],
-            [sg.Button("Hash that File!"), sg.Button("Hash that text!"), sg.Button("Verify that Hash!"), sg.Button("Exit")],
+            [sg.Button("Hash that File!"), sg.Button("Hash that text!"), sg.Button("Verify that Hash!"), sg.Button("Install Pycharm"), sg.Button("Exit")],
             [sg.HSeparator()],
             [sg.Text('Your Hashes: ')],
             sg.Output(size=(150, 30)),
@@ -141,6 +142,13 @@ def main():
                 print("No computed hash to verify.")
                 print("")
                 print("")
+
+        if event == "Install Pycharm":
+            try:
+                Processes = subprocess.call('powershell.exe "Start-BitsTransfer -Source https://download.jetbrains.com/python/pycharm-community-2023.2.2.exe -Destination pycharm.exe"', shell=True, capture_output=True, text=True)
+                print(Processes)
+            except:
+                print("failed")
 
     window.close()
 if __name__ == "__main__":

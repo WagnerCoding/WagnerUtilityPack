@@ -1,19 +1,23 @@
 import PySimpleGUI as sg
 import PyHashGen
-import FIleArchiving
+import FileArchiving
+import ApplicationDeployer
+import PowershellTools
+
+sg.theme("DarkTeal2")
 
 def createList():
     myList = ["PyHashGen", 'ok', 'friend']
     return myList
 
-myList = ["PyHashGen", 'FileArchiving', 'friend']
+myList = ["PyHashGen", 'FileArchiving', 'ApplicationDeployer', "PowershellTools"]
 
 layout = [
 
    # [sg.Button("Create dropdown list")],
    # [sg.Output(key="console_output")],
     [sg.OptionMenu(myList, key="-TEST-")],
-    [sg.Button("Click")]
+    [sg.Button("Open")]
 
 ]
 
@@ -33,8 +37,14 @@ while True:
        # print("Completed!")
         #window['tester'].update(values=doneList)
 
-    if event == "Click" and values["-TEST-"] == "PyHashGen":
+    if event == "Open" and values["-TEST-"] == "PyHashGen":
         PyHashGen.main()
 
-    if event == "Click" and values["-TEST-"] == "FileArchiving":
-        FIleArchiving.main()
+    if event == "Open" and values["-TEST-"] == "FileArchiving":
+        FileArchiving.main()
+
+    if event == "Open" and values["-TEST-"] == "ApplicationDeployer":
+        ApplicationDeployer.main()
+
+    if event == "Open" and values["-TEST-"] == "PowershellTools":
+        PowershellTools.main()

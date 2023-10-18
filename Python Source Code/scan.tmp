@@ -1,0 +1,44 @@
+
+Interface: 192.168.56.1 --- 0x16
+  Internet Address      Physical Address      Type
+  192.168.56.255        ff-ff-ff-ff-ff-ff     static    
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.0.0.250           01-00-5e-00-00-fa     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+  255.255.255.255       ff-ff-ff-ff-ff-ff     static    
+
+Interface: 192.168.1.27 --- 0x19
+  Internet Address      Physical Address      Type
+  192.168.1.1           74-24-9f-df-f4-33     dynamic   
+  192.168.1.21          ec-35-86-4e-eb-46     dynamic   
+  192.168.1.22          42-bf-9b-f1-49-1f     dynamic   
+  192.168.1.23          d4-ab-cd-88-b3-14     dynamic   
+  192.168.1.24          70-bc-10-a9-9e-99     dynamic   
+  192.168.1.238         80-d2-1d-c4-6b-35     dynamic   
+  192.168.1.255         ff-ff-ff-ff-ff-ff     static    
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+  255.255.255.255       ff-ff-ff-ff-ff-ff     static    
+
+Interface: 172.31.240.1 --- 0x1e
+  Internet Address      Physical Address      Type
+  172.31.255.255        ff-ff-ff-ff-ff-ff     static    
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  239.0.0.250           01-00-5e-00-00-fa     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+  255.255.255.255       ff-ff-ff-ff-ff-ff     static    
+
+Interface: 172.28.80.1 --- 0x34
+  Internet Address      Physical Address      Type
+  172.28.80.99          00-15-5d-d8-2e-a2     dynamic   
+  172.28.85.166         00-15-5d-d8-2f-5f     dynamic   
+  172.28.95.255         ff-ff-ff-ff-ff-ff     static    
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+  255.255.255.255       ff-ff-ff-ff-ff-ff     static    
