@@ -8,7 +8,7 @@ import subprocess
 
 sg.theme("DarkTeal2")
 
-from PIL import Image
+#from PIL import Image
 file_types = [("All files (*.*)", "*.*")]
 def main():
 

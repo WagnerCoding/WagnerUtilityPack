@@ -3,6 +3,7 @@ import PyHashGen
 import FileArchiving
 import ApplicationDeployer
 import PowershellTools
+import EncodeDecodeBase64
 
 sg.theme("DarkTeal2")
 
@@ -10,7 +11,7 @@ def createList():
     myList = ["PyHashGen", 'ok', 'friend']
     return myList
 
-myList = ["PyHashGen", 'FileArchiving', 'ApplicationDeployer', "PowershellTools"]
+myList = ["PyHashGen", 'FileArchiving', 'ApplicationDeployer', "PowershellTools", 'Base64']
 
 layout = [
 
@@ -48,3 +49,6 @@ while True:
 
     if event == "Open" and values["-TEST-"] == "PowershellTools":
         PowershellTools.main()
+        
+    if event == "Open" and values["-TEST-"] == "Base64":
+        EncodeDecodeBase64.main()
