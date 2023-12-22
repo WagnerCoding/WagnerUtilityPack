@@ -22,7 +22,7 @@ layout = [
 
 ]
 
-window = sg.Window("Winner profiles", layout)
+window = sg.Window("Wagner Coding Utility Pack", layout)
 
 while True:
     event, values = window.read()
